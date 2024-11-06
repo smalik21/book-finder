@@ -35,21 +35,6 @@ A live demo is available here: [Demo Link](https://dxjl2w-5173.csb.app/)
 
 The app will be available at http://localhost:5173.
 
-## Project Structure
-
-├── api
-│   └── openLibrary.js          # API request functions
-├── assets
-│   └── image-not-available.jpg # Placeholder image for missing book covers
-├── components
-│   ├── BookCard.js             # Book card component for listing
-│   ├── BookDetailsModal.js     # Modal component for displaying book details
-│   ├── ResultsList.js          # Component for listing search results
-│   ├── SearchBar.js            # Search bar component
-│   └── Title.js               # Title component with homepage link
-├── App.js                      # Main app component
-└── index.js                    # Entry point
-
 ## Usage
 
 - Search for Books: Enter a keyword in the search bar, choose a search type, and hit Enter.
