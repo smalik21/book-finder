@@ -91,7 +91,13 @@ export default function Home() {
       )}
 
       <Title />
-      <SearchBar onSearch={(query, type) => handleSearch(query, type, 1)} />
+      <SearchBar
+        query={query}
+        setQuery={setQuery}
+        searchType={searchType}
+        setSearchType={setSearchType}
+        onSearch={(query, type) => handleSearch(query, type, 1)}
+      />
       <ResultsList results={results} />
 
       <div className="flex justify-between items-center mt-4">
