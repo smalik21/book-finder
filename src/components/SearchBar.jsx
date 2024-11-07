@@ -1,14 +1,20 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
 
 SearchBar.propTypes = {
+  query: PropTypes.string.isRequired,
+  setQuery: PropTypes.func.isRequired,
+  searchType: PropTypes.string.isRequired,
+  setSearchType: PropTypes.func.isRequired,
   onSearch: PropTypes.func.isRequired,
 };
 
-export default function SearchBar({ onSearch }) {
-  const [query, setQuery] = useState("");
-  const [searchType, setSearchType] = useState("title");
-
+export default function SearchBar({
+  query,
+  setQuery,
+  searchType,
+  setSearchType,
+  onSearch,
+}) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (query) onSearch(query, searchType);
